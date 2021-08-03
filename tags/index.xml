@@ -2,72 +2,72 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Educenter | hugo education template</title>
-    <link>http://examplesite.org/tags/</link>
+    <link>https://iafenvoy.github.io/tags/</link>
     <description>Recent content in Tags on Educenter | hugo education template</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright &amp;copy; 2020 a hugo theme by [themefisher](https://themefisher.com)</copyright>
-    <lastBuildDate>Sat, 06 Jul 2019 15:27:17 +0600</lastBuildDate><atom:link href="http://examplesite.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 06 Jul 2019 15:27:17 +0600</lastBuildDate><atom:link href="https://iafenvoy.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Advice</title>
-      <link>http://examplesite.org/tags/advice/</link>
+      <link>https://iafenvoy.github.io/tags/advice/</link>
       <pubDate>Sat, 06 Jul 2019 15:27:17 +0600</pubDate>
       
-      <guid>http://examplesite.org/tags/advice/</guid>
+      <guid>https://iafenvoy.github.io/tags/advice/</guid>
       <description></description>
     </item>
     
     <item>
       <title>AI</title>
-      <link>http://examplesite.org/tags/ai/</link>
+      <link>https://iafenvoy.github.io/tags/ai/</link>
       <pubDate>Sat, 06 Jul 2019 15:27:17 +0600</pubDate>
       
-      <guid>http://examplesite.org/tags/ai/</guid>
+      <guid>https://iafenvoy.github.io/tags/ai/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Automation</title>
-      <link>http://examplesite.org/tags/automation/</link>
+      <link>https://iafenvoy.github.io/tags/automation/</link>
       <pubDate>Sat, 06 Jul 2019 15:27:17 +0600</pubDate>
       
-      <guid>http://examplesite.org/tags/automation/</guid>
+      <guid>https://iafenvoy.github.io/tags/automation/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Eco</title>
-      <link>http://examplesite.org/tags/eco/</link>
+      <link>https://iafenvoy.github.io/tags/eco/</link>
       <pubDate>Sat, 06 Jul 2019 15:27:17 +0600</pubDate>
       
-      <guid>http://examplesite.org/tags/eco/</guid>
+      <guid>https://iafenvoy.github.io/tags/eco/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Education</title>
-      <link>http://examplesite.org/tags/education/</link>
+      <link>https://iafenvoy.github.io/tags/education/</link>
       <pubDate>Sat, 06 Jul 2019 15:27:17 +0600</pubDate>
       
-      <guid>http://examplesite.org/tags/education/</guid>
+      <guid>https://iafenvoy.github.io/tags/education/</guid>
       <description></description>
     </item>
     
     <item>
       <title>English</title>
-      <link>http://examplesite.org/tags/english/</link>
+      <link>https://iafenvoy.github.io/tags/english/</link>
       <pubDate>Sat, 06 Jul 2019 15:27:17 +0600</pubDate>
       
-      <guid>http://examplesite.org/tags/english/</guid>
+      <guid>https://iafenvoy.github.io/tags/english/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Rules</title>
-      <link>http://examplesite.org/tags/rules/</link>
+      <link>https://iafenvoy.github.io/tags/rules/</link>
       <pubDate>Sat, 06 Jul 2019 15:27:17 +0600</pubDate>
       
-      <guid>http://examplesite.org/tags/rules/</guid>
+      <guid>https://iafenvoy.github.io/tags/rules/</guid>
       <description></description>
     </item>
     
