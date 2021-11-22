@@ -1,0 +1,93 @@
+{
+    "GENERAL": {
+        "config.ornaments.open_menu_key": {
+            "keys": "F7",
+            "settings": {
+                "activate_on": "PRESS",
+                "context": "INGAME",
+                "allow_empty": false,
+                "allow_extra_keys": false,
+                "order_sensitive": true,
+                "exclusive": false,
+                "cancel": true
+            }
+        },
+        "config.ornaments.user": "ThunderEnvoy"
+    },
+    "Cape": {
+        "config.ornaments.show_cape": true,
+        "config.ornaments.showoption": "s8_7",
+        "config.ornaments.useimage": true,
+        "config.ornaments.imagename": "human",
+        "config.ornaments.colorbase": "#F0334CB2",
+        "config.ornaments.name1": "small_stripes",
+        "config.ornaments.color1": "#0F000000",
+        "config.ornaments.name2": "triangles_top",
+        "config.ornaments.color2": "#0F000000",
+        "config.ornaments.name3": "triangles_bottom",
+        "config.ornaments.color3": "#0F000000",
+        "config.ornaments.name4": "rhombus",
+        "config.ornaments.color4": "#F0334CB2",
+        "config.ornaments.name5": "flower",
+        "config.ornaments.color5": "#F0000000",
+        "config.ornaments.name6": "circle",
+        "config.ornaments.color6": "#F04C7F99",
+        "config.ornaments.name7": "border",
+        "config.ornaments.color7": "#F0000000",
+        "config.ornaments.name8": "",
+        "config.ornaments.color8": "#F0FFFFFF"
+    },
+    "Wings": {
+        "config.ornaments.show_wing": true,
+        "config.ornaments.overwrite_elytra": false,
+        "config.ornaments.wingtype": "tech",
+        "config.ornaments.lwingcolorl1": "#A00000FF",
+        "config.ornaments.lwingcolorl2": "#F0FFFFFF",
+        "config.ornaments.rwingcolorl1": "#A08000F0",
+        "config.ornaments.rwingcolorl2": "#F0FFFFFF"
+    },
+    "BackTools": {
+        "config.ornaments.show_back_tool": false,
+        "config.ornaments.backtooltype1": "",
+        "config.ornaments.enchanted1": false,
+        "config.ornaments.rotateangle1": 0.0,
+        "config.ornaments.xoffset1": 0.0,
+        "config.ornaments.yoffset1": 0.0,
+        "config.ornaments.backtooltype2": "",
+        "config.ornaments.enchanted2": true,
+        "config.ornaments.rotateangle2": 90.0,
+        "config.ornaments.xoffset2": 0.29885057471264354,
+        "config.ornaments.yoffset2": 0.34482758620689635
+    },
+    "BeltSlot": {
+        "config.ornaments.show_belt": false,
+        "config.ornaments.beltslottype1": "bow",
+        "config.ornaments.enchanted1_1": false,
+        "config.ornaments.rotateangle1_1": 0.0,
+        "config.ornaments.xoffset1_1": 0.0,
+        "config.ornaments.yoffset1_1": 0.0,
+        "config.ornaments.beltslottype2": "trident",
+        "config.ornaments.enchanted2_1": false,
+        "config.ornaments.rotateangle2_1": 0.0,
+        "config.ornaments.xoffset2_1": 0.0,
+        "config.ornaments.yoffset2_1": 0.0
+    },
+    "BugFix": {
+        "config.ornaments.rotateanglex1": 0.0,
+        "config.ornaments.rotateangley1": 0.0,
+        "config.ornaments.zoffset1": 0.0,
+        "config.ornaments.size1": 2.0,
+        "config.ornaments.rotateanglex2": 0.0,
+        "config.ornaments.rotateangley2": 0.0,
+        "config.ornaments.zoffset2": 0.0,
+        "config.ornaments.size2": 2.0,
+        "config.ornaments.rotateanglex1_1": 0.0,
+        "config.ornaments.rotateangley1_1": 0.0,
+        "config.ornaments.zoffset1_1": 0.0,
+        "config.ornaments.size1_1": 2.0,
+        "config.ornaments.rotateanglex2_1": 0.0,
+        "config.ornaments.rotateangley2_1": 0.0,
+        "config.ornaments.zoffset2_1": 0.0,
+        "config.ornaments.size2_1": 2.0
+    }
+}
