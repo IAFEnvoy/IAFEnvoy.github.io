@@ -44,7 +44,7 @@ function loadTable() {
             roomNode.style.position = "absolute";
             roomNode.style.marginLeft = (315 + 300 * counter) + "px";
             roomNode.style.marginTop = (50 * i + 5) + "px";
-            var url = document.baseURI.replace("index.html", "") + "Info/index.html?location=" + result["data"][i]["data"][counter]["location"]
+            var url = document.baseURI.replace("index.html", "") + "info.html?location=" + result["data"][i]["data"][counter]["location"]
             roomNode.innerHTML = "<a href=" + url + " target='_blank'>" + result["data"][i]["data"][counter]["location"] + " " + result["data"][i]["data"][counter]["name"] + "</a>";
             table.appendChild(roomNode);
 
