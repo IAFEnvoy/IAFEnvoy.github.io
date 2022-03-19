@@ -86,12 +86,12 @@
         }, {
             "name": "梦子哥的线上茶话会！（舰长群）",
             "stats": "锁群",
-            "location": "202",
+            "location": "102",
             "allow": "captainAllow"
         }, {
             "name": "学习资料群",
             "stats": "开放（需要密码）",
-            "location": "203",
+            "location": "103",
             "allow": "inviteAllow"
         }]
     }, {
