@@ -1,14 +1,14 @@
 @font-face {
     font-family: "Table_Title";
-    src: url("我的小可爱啊.ttf");
+    src: url("Table_Title.ttf");
 }
 
 @font-face {
     font-family: "Table_Floor";
-    src: url("方正喵呜简体.ttf");
+    src: url("Table_Floor.ttf");
 }
 
 @font-face {
     font-family: "Table_Util";
-    src: url("早安晚安体.ttf");
+    src: url("Table_Util.ttf");
 }
