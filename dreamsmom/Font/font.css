@@ -1,14 +1,14 @@
 @font-face {
     font-family: "Table_Title";
-    src: url("Table_Title.ttf");
+    src: url("Table_Title.TTF");
 }
 
 @font-face {
     font-family: "Table_Floor";
-    src: url("Table_Floor.ttf");
+    src: url("Table_Floor.TTF");
 }
 
 @font-face {
     font-family: "Table_Util";
-    src: url("Table_Util.ttf");
+    src: url("Table_Util.TTF");
 }
