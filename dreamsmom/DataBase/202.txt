@@ -7,3 +7,5 @@
 前身为梦妈临时SMP，由小黑创建，是一个carpet原版生电服。后来因为梦妈官方SMP的开放，这个服务器改名为小黑服。
 
 服务器地图：http://dreamsmom.top:56009/
+
+<div align=center><img src="./img/1.png" width="800"></div>
