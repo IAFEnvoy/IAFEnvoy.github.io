@@ -1,12 +1,13 @@
 {
-    "title": "梦妈の快乐小屋总览",
+    "title": "梦妈の快乐小屋",
     "data": [{
         "floor_name": "6层",
         "floor_util": "高管层",
         "data": [{
             "name": "妈妈桑的管理群",
             "stats": "不开放",
-            "location": "601"
+            "location": "601",
+            "allow": "allNotAllow"
         }]
     }, {
         "floor_name": "5层",
@@ -14,11 +15,13 @@
         "data": [{
             "name": "小游戏约局群",
             "stats": "锁群",
-            "location": "501"
+            "location": "501",
+            "allow": "captainAllow"
         }, {
             "name": "梦妈的Hypixel群",
             "stats": "群号：827070715",
-            "location": "502"
+            "location": "502",
+            "allow": "allAllow"
         }]
     }, {
         "floor_name": "4层",
@@ -26,11 +29,13 @@
         "data": [{
             "name": "梦妈直播通知群（禁言）",
             "stats": "群号：698256895",
-            "location": "401"
+            "location": "401",
+            "allow": "allAllow"
         }, {
             "name": "直播通知群（非官方）",
             "stats": "开放情况未知",
-            "location": "402"
+            "location": "402",
+            "allow": "allAllow"
         }]
     }, {
         "floor_name": "3层",
@@ -38,15 +43,18 @@
         "data": [{
             "name": "Xor VII Launcher Development",
             "stats": "锁群/202成员可进",
-            "location": "301"
+            "location": "301",
+            "allow": "inviteAllow"
         }, {
             "name": "冰火的mod群",
             "stats": "群号：985134238",
-            "location": "302"
+            "location": "302",
+            "allow": "allAllow"
         }, {
             "name": "模组光影群",
             "stats": "群号：130209688",
-            "location": "303"
+            "location": "303",
+            "allow": "allAllow"
         }]
     }, {
         "floor_name": "2层",
@@ -54,31 +62,37 @@
         "data": [{
             "name": "梦妈的smp服务器群",
             "stats": "群号：866952740（有审核）",
-            "location": "201"
+            "location": "201",
+            "allow": "fanAllow"
         }, {
             "name": "DreamsMom Xor SMP",
             "stats": "锁群/进服问卷",
-            "location": "202"
+            "location": "202",
+            "allow": "inviteAllow"
         }, {
             "name": "梦妈的smp服务器旧群",
             "stats": "群号：932087645（加了没啥用）",
-            "location": "203"
+            "location": "203",
+            "allow": "allNotAllow"
         }]
     }, {
         "floor_name": "1层",
         "floor_util": "交流层",
         "data": [{
             "name": "妈妈在此！（1群）",
-            "stats": "没了",
-            "location": "101"
+            "stats": "永久关闭",
+            "location": "101",
+            "allow": "allNotAllow"
         }, {
             "name": "梦子哥的线上茶话会！（舰长群）",
             "stats": "锁群",
-            "location": "202"
+            "location": "202",
+            "allow": "captainAllow"
         }, {
             "name": "学习资料群",
             "stats": "开放（需要密码）",
-            "location": "203"
+            "location": "203",
+            "allow": "inviteAllow"
         }]
     }, {
         "floor_name": "B1层",
@@ -86,7 +100,8 @@
         "data": [{
             "name": "避难所",
             "stats": "开放",
-            "location": "B101"
+            "location": "B101",
+            "allow": "allAllow"
         }]
     }, {
         "floor_name": "B2层",
@@ -94,7 +109,8 @@
         "data": [{
             "name": "亲友群",
             "stats": "有审核，但是很严",
-            "location": "B201"
+            "location": "B201",
+            "allow": "allNotAllow"
         }]
     }]
 }

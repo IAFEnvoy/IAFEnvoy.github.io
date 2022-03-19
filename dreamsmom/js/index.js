@@ -42,7 +42,7 @@ function loadTable() {
             roomNode = document.createElement("div");
             roomNode.className = "normalClass";
             roomNode.style.position = "absolute";
-            roomNode.style.marginLeft = (300 + 300 * counter) + "px";
+            roomNode.style.marginLeft = (315 + 300 * counter) + "px";
             roomNode.style.marginTop = (50 * i + 5) + "px";
             var url = document.baseURI.replace("index.html", "") + "Info/index.html?location=" + result["data"][i]["data"][counter]["location"]
             roomNode.innerHTML = "<a href=" + url + " target='_blank'>" + result["data"][i]["data"][counter]["location"] + " " + result["data"][i]["data"][counter]["name"] + "</a>";
@@ -51,10 +51,27 @@ function loadTable() {
             statsNode = document.createElement("div");
             statsNode.className = "normalClass";
             statsNode.style.position = "absolute";
-            statsNode.style.marginLeft = (300 + 300 * counter) + "px";
+            statsNode.style.marginLeft = (315 + 300 * counter) + "px";
             statsNode.style.marginTop = (50 * i + 25) + "px";
             statsNode.innerText = result["data"][i]["data"][counter]["stats"];
             table.appendChild(statsNode);
+
+            counter++;
+        }
+    }
+    background = document.getElementById("background");
+    for (i = 0; i < 8; i++) {
+        var counter = 0;
+        for (var {} in result["data"][i]["data"]) {
+            backcolorNode = document.createElement("div");
+            backcolorNode.className = result["data"][i]["data"][counter]["allow"];
+            backcolorNode.style.position = "absolute";
+            backcolorNode.style.marginLeft = (300 + 300 * counter) + "px";
+            backcolorNode.style.marginTop = (50 * i + 55) + "px";
+            backcolorNode.style.width = "300px";
+            backcolorNode.style.height = "50px";
+            backcolorNode.innerText = "";
+            background.appendChild(backcolorNode);
 
             counter++;
         }
