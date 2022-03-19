@@ -4,50 +4,35 @@
 <head>
     <meta charset="utf-8">
     <title>梦妈の快乐小屋介绍</title>
+    <link rel="stylesheet" typr="text/css" href="Font/font.css">
+    <script src="js/jquery-3.6.0.min.js" type="text/javascript"></script>
+    <script src="js/index.js " type="text/javascript "></script>
+    <style>
+        .titleClass {
+            font-family: "Table_Title";
+            font-size: 40px;
+            font-weight: bold;
+        }
+        
+        .floorClass {
+            font-family: "Table_Floor";
+            font-size: 40px;
+        }
+        
+        .utilClass {
+            font-family: "Table_Util";
+            font-size: 40px;
+        }
+        
+        .normalClass {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
 </head>
 
 <body>
-    <div id="title">
-        <h1>梦妈の快乐小屋总览</h1>
-    </div>
-    <div id="data">
+    <div id="table">
     </div>
 </body>
-<script language="javascript" type="text/javascript">
-    window.onload = function() {
-        var this_url = document.baseURI.replace("index.html", "");
-        var url = "data.txt";
-        var request = new XMLHttpRequest();
-        request.open("GET", url);
-        request.send(null);
-        request.onloadend = function() {
-            if (request.status == 200) {
-                var table = document.getElementById("data");
-                var data = request.responseText.split("\n");
-                for (var i = 0; i < data.length; i++) {
-                    var data2 = data[i].split(",");
-                    for (var j = 0; j < data2.length; j++) {
-                        if (j >= 2) {
-                            var location = data2[j].split(" ")[0];
-                            var node = document.createElement("links");
-                            node.innerHTML = "<a href='" + this_url + "info.html?location=" + location + "'>" + data2[j] + "</a>";
-                            table.appendChild(node);
-                        } else {
-                            var node = document.createElement("links");
-                            node.innerText = data2[j].replace(",", "    ");
-                            table.appendChild(node);
-                        }
-                        var node = document.createElement("space");
-                        node.innerText = " ";
-                        table.appendChild(node);
-                    }
-                    var node = document.createElement("enter");
-                    node.innerText = "\n";
-                    table.appendChild(node);
-                }
-            }
-        }
-    }
-</script>
 
 </html>
