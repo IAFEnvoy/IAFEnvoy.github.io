@@ -44,6 +44,7 @@ function loadTable() {
             roomNode.style.position = "absolute";
             roomNode.style.marginLeft = (315 + 300 * counter) + "px";
             roomNode.style.marginTop = (50 * i + 5) + "px";
+            roomNode.style.width = "300px";
             var url = document.baseURI.replace("index.html", "") + "info.html?location=" + result["data"][i]["data"][counter]["location"]
             roomNode.innerHTML = "<a href=" + url + " target='_blank'>" + result["data"][i]["data"][counter]["location"] + " " + result["data"][i]["data"][counter]["name"] + "</a>";
             table.appendChild(roomNode);
@@ -53,6 +54,7 @@ function loadTable() {
             statsNode.style.position = "absolute";
             statsNode.style.marginLeft = (315 + 300 * counter) + "px";
             statsNode.style.marginTop = (50 * i + 25) + "px";
+            statsNode.style.width = "300px";
             statsNode.innerText = result["data"][i]["data"][counter]["stats"];
             table.appendChild(statsNode);
 
