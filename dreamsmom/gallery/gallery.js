@@ -1,10 +1,6 @@
 window.onload = function() {
-    var searchStr = location.search;
-    searchStr = searchStr.substr(1);
-    var searchs = searchStr.split("&");
-    var ids = searchs[0].split("=");
-    var this_url = document.baseURI.replace("info.html", "").replace(location.search, "");
-    var url = this_url + "DataBase/info/" + ids[1] + ".txt";
+    var this_url = document.baseURI.replace("gallery.html", "").replace(location.search, "");
+    var url = this_url + "data.txt";
     var request = new XMLHttpRequest();
     request.open("GET", url);
     request.send(null);

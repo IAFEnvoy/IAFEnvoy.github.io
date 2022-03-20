@@ -1,5 +1,6 @@
 window.onload = function() {
     loadTable();
+    loadMeme();
 }
 
 function loadTable() {
@@ -77,5 +78,31 @@ function loadTable() {
 
             counter++;
         }
+    }
+}
+
+function loadMeme() {
+    var this_url = document.baseURI.replace("info.html", "").replace(location.search, "");
+    var url = this_url + "DataBase/meme.txt";
+    var request = new XMLHttpRequest();
+    request.open("GET", url);
+    request.send(null);
+    request.onloadend = function() {
+        if (request.status == 200) {
+            var data = request.responseText.split("\n");
+            memecnt = Math.floor(Math.random() * data.length);
+            document.getElementById("meme").innerText = "今日笑话：" + data[memecnt];
+        } else {
+            document.getElementById("meme").innerText = "完蛋，我想不出笑话了";
+        }
+    }
+}
+
+function seeMemeDetail() {
+    if (memecnt == 2) {
+        var this_url = document.baseURI.replace("info.html", "").replace(location.search, "");
+        window.open(this_url + "info.html?location=history", "_blank");
+    } else {
+        alert("这里还没做完哦~");
     }
 }
