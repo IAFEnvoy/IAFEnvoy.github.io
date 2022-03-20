@@ -8,6 +8,11 @@
             "stats": "不开放",
             "location": "601",
             "allow": "allNotAllow"
+        }, {
+            "name": "梦妈新世纪管理组",
+            "stats": "不开放",
+            "location": "602",
+            "allow": "allNotAllow"
         }]
     }, {
         "floor_name": "5层",
@@ -93,6 +98,11 @@
             "stats": "开放（需要密码）",
             "location": "103",
             "allow": "inviteAllow"
+        }, {
+            "name": "梦妈线上击剑群（避难所）",
+            "stats": "群号：930235016",
+            "location": "104",
+            "allow": "allAllow"
         }]
     }, {
         "floor_name": "B1层",
