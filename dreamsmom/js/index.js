@@ -82,7 +82,7 @@ function loadTable() {
 }
 
 function loadMeme() {
-    var this_url = document.baseURI.replace("info.html", "").replace(location.search, "");
+    var this_url = document.baseURI.replace("index.html", "").replace(location.search, "");
     var url = this_url + "DataBase/meme.txt";
     var request = new XMLHttpRequest();
     request.open("GET", url);
@@ -100,7 +100,7 @@ function loadMeme() {
 
 function seeMemeDetail() {
     if (memecnt == 2) {
-        var this_url = document.baseURI.replace("info.html", "").replace(location.search, "");
+        var this_url = document.baseURI.replace("index.html", "").replace(location.search, "");
         window.open(this_url + "info.html?location=history", "_blank");
     } else {
         alert("这里还没做完哦~");
