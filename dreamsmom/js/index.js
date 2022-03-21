@@ -121,3 +121,7 @@ function betterShow(num, digit) {
     return string;
 }
 setInterval(clock, 1000);
+
+function dxzp() {
+    window.open("https://www.bilibili.com/video/BV1GJ411x7h7", "_blank");
+}
