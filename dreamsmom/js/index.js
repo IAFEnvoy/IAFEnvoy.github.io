@@ -106,3 +106,13 @@ function seeMemeDetail() {
         alert("这里还没做完哦~");
     }
 }
+
+function clock() {
+    //yyyy/mm/dd hh:mm:ss
+    var timerNode = document.getElementById("timer");
+    var date = new Date();
+    var string = "当前时间：" + date.getFullYear() + "/" + (date.getMonth() + 1) + "/" + date.getDate();
+    string += " " + date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
+    timerNode.innerText = string;
+}
+setInterval(clock, 1000);
