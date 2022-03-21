@@ -1,6 +1,7 @@
 window.onload = function() {
     loadTable();
     loadMeme();
+    clock();
 }
 
 function loadTable() {
@@ -82,37 +83,41 @@ function loadTable() {
 }
 
 function loadMeme() {
-    var this_url = document.baseURI.replace("index.html", "").replace(location.search, "");
-    var url = this_url + "DataBase/meme.txt";
-    var request = new XMLHttpRequest();
-    request.open("GET", url);
-    request.send(null);
-    request.onloadend = function() {
-        if (request.status == 200) {
-            var data = request.responseText.split("\n");
-            memecnt = Math.floor(Math.random() * data.length);
-            document.getElementById("meme").innerText = "今日笑话：" + data[memecnt];
-        } else {
-            document.getElementById("meme").innerText = "完蛋，我想不出笑话了";
-        }
-    }
+    a = $.ajax({
+        url: "DataBase/meme.json",
+        type: "GET",
+        dataType: "json",
+        async: false,
+        success: function() {}
+    });
+    memeResult = $.parseJSON(a["responseText"]);
+    memeCnt = 0;
+    for (var {} in memeResult) memeCnt++;
+    memeNo = Math.floor(Math.random() * memeCnt);
+    document.getElementById("meme").innerText = "今日笑话：" + memeResult[memeNo]["data"];
+    document.getElementById("memeAuthor").innerText = memeResult[memeNo]["author"] != "" ? "---" + memeResult[memeNo]["author"] : "";
 }
 
 function seeMemeDetail() {
-    if (memecnt == 2) {
-        var this_url = document.baseURI.replace("index.html", "").replace(location.search, "");
-        window.open(this_url + "info.html?location=history", "_blank");
-    } else {
-        alert("这里还没做完哦~");
-    }
+    if (memeResult[memeNo]["url"] != "")
+        window.open(memeResult[memeNo]["url"], "_blank");
 }
 
 function clock() {
     //yyyy/mm/dd hh:mm:ss
     var timerNode = document.getElementById("timer");
     var date = new Date();
-    var string = "当前时间：" + date.getFullYear() + "/" + (date.getMonth() + 1) + "/" + date.getDate();
-    string += " " + date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
+    var string = "当前时间：" + betterShow(date.getFullYear(), 4) + "/" + betterShow(date.getMonth() + 1, 2) + "/" + betterShow(date.getDate(), 2) + " ";
+    string += betterShow(date.getHours(), 2) + ":" + betterShow(date.getMinutes(), 2) + ":" + betterShow(date.getSeconds(), 2);
     timerNode.innerText = string;
+}
+
+function betterShow(num, digit) {
+    var string = "";
+    var num_string = num.toString();
+    for (var i = 0; i < digit - num_string.length; i++)
+        string += "0";
+    string += num_string;
+    return string;
 }
 setInterval(clock, 1000);
