@@ -85,7 +85,7 @@
         "floor_util": "交流层",
         "data": [{
             "name": "妈妈在此！（1群）",
-            "stats": "永久关闭",
+            "stats": "已解散",
             "location": "101",
             "allow": "allNotAllow"
         }, {
