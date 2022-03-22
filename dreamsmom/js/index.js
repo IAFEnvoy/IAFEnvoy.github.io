@@ -15,72 +15,37 @@ function loadTable() {
     result = $.parseJSON(a["responseText"]);
     table = document.getElementById("table");
 
-    titleNode = document.createElement("div");
-    titleNode.id = "title";
-    titleNode.className = "titleClass";
-    titleNode.style.marginLeft = "200px";
-    titleNode.innerText = result["title"];
-    table.appendChild(titleNode);
-
     for (i = 0; i < 8; i++) {
-        floorNode = document.createElement("div");
-        floorNode.className = "floorClass";
-        floorNode.style.position = "absolute";
-        floorNode.style.marginLeft = "50px";
-        floorNode.style.marginTop = (50 * i + 10) + "px";
-        floorNode.innerText = result["data"][i]["floor_name"];
-        table.appendChild(floorNode);
-
-        utilNode = document.createElement("div");
-        utilNode.className = "utilClass";
-        utilNode.style.position = "absolute";
-        utilNode.style.marginLeft = "130px";
-        utilNode.style.marginTop = 50 * i + "px";
-        utilNode.innerText = result["data"][i]["floor_util"];
-        table.appendChild(utilNode);
-
         var counter = 0;
-        for (var {} in result["data"][i]["data"]) {
-            roomNode = document.createElement("div");
+        for (var {} in result[i]["data"]) {
+            buttonNode = document.createElement("button");
+            buttonNode.className = result[i]["data"][counter]["allow"];
+            buttonNode.style.position = "absolute";
+            buttonNode.style.marginLeft = (300 + 300 * counter) + "px";
+            buttonNode.style.marginTop = (50 * i + 55) + "px";
+            buttonNode.style.width = "300px";
+            buttonNode.style.height = "50px";
+            buttonNode.name = result[i]["data"][counter]["location"];
+
+            buttonNode.onclick = function() {
+                var url = document.baseURI.replace("index.html", "") + "info.html?location=" + this.name;
+                window.open(url, "_blank");
+            }
+
+            roomNode = document.createElement("span");
             roomNode.className = "normalClass";
-            roomNode.style.position = "absolute";
-            roomNode.style.marginLeft = (315 + 300 * counter) + "px";
-            roomNode.style.marginTop = (50 * i + 5) + "px";
             roomNode.style.width = "300px";
-            var url = document.baseURI.replace("index.html", "") + "info.html?location=" + result["data"][i]["data"][counter]["location"]
-            roomNode.innerHTML = "<a href=" + url + " target='_blank'>" + result["data"][i]["data"][counter]["location"] + " " + result["data"][i]["data"][counter]["name"] + "</a>";
-            table.appendChild(roomNode);
+            roomNode.innerHTML = result[i]["data"][counter]["location"] + " " + result[i]["data"][counter]["name"] + "<br/>" + result[i]["data"][counter]["stats"];
+            buttonNode.appendChild(roomNode);
 
-            statsNode = document.createElement("div");
-            statsNode.className = "normalClass";
-            statsNode.style.position = "absolute";
-            statsNode.style.marginLeft = (315 + 300 * counter) + "px";
-            statsNode.style.marginTop = (50 * i + 25) + "px";
-            statsNode.style.width = "300px";
-            statsNode.innerText = result["data"][i]["data"][counter]["stats"];
-            table.appendChild(statsNode);
-
-            counter++;
-        }
-    }
-    background = document.getElementById("background");
-    for (i = 0; i < 8; i++) {
-        var counter = 0;
-        for (var {} in result["data"][i]["data"]) {
-            backcolorNode = document.createElement("div");
-            backcolorNode.className = result["data"][i]["data"][counter]["allow"];
-            backcolorNode.style.position = "absolute";
-            backcolorNode.style.marginLeft = (300 + 300 * counter) + "px";
-            backcolorNode.style.marginTop = (50 * i + 55) + "px";
-            backcolorNode.style.width = "300px";
-            backcolorNode.style.height = "50px";
-            backcolorNode.innerText = "";
-            background.appendChild(backcolorNode);
+            table.appendChild(buttonNode);
 
             counter++;
         }
     }
 }
+
+
 
 function loadMeme() {
     a = $.ajax({
