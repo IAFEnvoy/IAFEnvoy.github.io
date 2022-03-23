@@ -1,0 +1,15 @@
+# 302 冰火的开发群
+
+群号：985134238
+
+因为冰火过于能写mod（小黑服的白名单和称号全是他写的，当然他也写客户端mod和拓展mod），所以拉了个群。
+
+后来这个群的一个功能是讨论这个网站的开发。
+
+隔壁还有个群负责Fracture的开发，这里主要负责其他mod。
+
+部分mod下载地址：
+
+https://www.curseforge.com/minecraft/mc-mods/loading-manager
+
+https://www.curseforge.com/minecraft/mc-mods/ornaments
