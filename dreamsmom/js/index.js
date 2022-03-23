@@ -45,8 +45,6 @@ function loadTable() {
     }
 }
 
-
-
 function loadMeme() {
     a = $.ajax({
         url: "DataBase/meme.json",
