@@ -22,7 +22,7 @@
          "allow": "captainAllow"
      }, {
          "name": "梦妈的Hypixel群",
-         "stats": "群号：827070715",
+         "stats": "开放",
          "location": "502",
          "allow": "allAllow"
      }]
@@ -50,12 +50,12 @@
          "allow": "inviteAllow"
      }, {
          "name": "冰火的开发群",
-         "stats": "群号：985134238",
+         "stats": "开放",
          "location": "302",
          "allow": "allAllow"
      }, {
          "name": "模组光影群",
-         "stats": "群号：130209688",
+         "stats": "开放",
          "location": "303",
          "allow": "allAllow"
      }]
@@ -64,7 +64,7 @@
      "floor_util": "SMP层",
      "data": [{
          "name": "梦妈的smp服务器群",
-         "stats": "群号：866952740（有审核）",
+         "stats": "有审核",
          "location": "201",
          "allow": "fanAllow"
      }, {
@@ -98,7 +98,7 @@
          "allow": "inviteAllow"
      }, {
          "name": "梦妈线上击剑群（避难所）",
-         "stats": "群号：930235016",
+         "stats": "开放",
          "location": "104",
          "allow": "allAllow"
      }]
