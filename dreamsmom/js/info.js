@@ -3,7 +3,7 @@ window.onload = function() {
     searchStr = searchStr.substr(1);
     var searchs = searchStr.split("&");
     var ids = searchs[0].split("=");
-    var this_url = document.baseURI.replace("info.html", "").replace(location.search, "");
+    var this_url = document.baseURI.replace("info.html", "").replace("info", "").replace(location.search, "");
     var url = this_url + "DataBase/info/" + ids[1] + ".txt";
     var request = new XMLHttpRequest();
     request.open("GET", url);

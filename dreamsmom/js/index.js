@@ -28,7 +28,7 @@ function loadTable() {
             buttonNode.name = result[i]["data"][counter]["location"];
 
             buttonNode.onclick = function() {
-                var url = document.baseURI.replace("index.html", "") + "info.html?location=" + this.name;
+                var url = document.baseURI.replace("index.html", "").replace("index", "") + "info?location=" + this.name;
                 window.open(url, "_blank");
             }
 
