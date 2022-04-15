@@ -11,3 +11,7 @@
 服务器地图：http://dreamsmom.top:56009/
 
 <div align=center><img src="./img/1.png" width="800"></div>
+
+
+
+<div align=center><img src="./img/2.png" width="1000"></div>
