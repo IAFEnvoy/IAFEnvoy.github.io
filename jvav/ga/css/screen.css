@@ -104,7 +104,7 @@ a:active{color:#C20; text-decoration: none;}
 /* @group jvh0 Header  */
 
 .jvh0 {
-	background: url('/ga/images/jv0h.jpg') no-repeat top left;
+	background: url('/jvav/ga/images/jv0h.jpg') no-repeat top left;
 	height: 95px;
 	width: 777px;
 	display: block;
@@ -132,7 +132,7 @@ a:active{color:#C20; text-decoration: none;}
 .jvh0 p a.on{font-weight:bold;}
 .jvh0 p a.on,
 .jvh0 p a:hover {
-	background: url('/ga/images/jv0h_link_on.gif') no-repeat center left;
+	background: url('/jvav/ga/images/jv0h_link_on.gif') no-repeat center left;
 	text-shadow: none;
 }
 .jvh0 p a.on,
@@ -141,7 +141,7 @@ a:active{color:#C20; text-decoration: none;}
 }
 
 .jvl0 {
-	background: url('/ga/im/a.gif') no-repeat top left; 
+	background: url('/jvav/ga/im/a.gif') no-repeat top left; 
 	height: 73px;
 	width: 120px;
 	display: block;
@@ -232,7 +232,7 @@ a:active{color:#C20; text-decoration: none;}
 }
 
 .jvf0 .jvsun0 {
-	background: url('/ga/images/jv0_oracle.gif') no-repeat top left;
+	background: url('/jvav/ga/images/jv0_oracle.gif') no-repeat top left;
 	height: 22px;
 	width: 91px;
 	display: block;
@@ -392,7 +392,7 @@ html #jvhx0 .jvhx0w1 a:hover img {
 }
 html .jvc0v2 h1 {
 	display: block;
-	background: url('/ga/images/jv0ht.gif') no-repeat top center;
+	background: url('/jvav/ga/images/jv0ht.gif') no-repeat top center;
 	height: 173px;
 	text-indent: -999em;
 	margin-bottom: 2em;
@@ -400,12 +400,12 @@ html .jvc0v2 h1 {
 	top: 1em;
 }
 
-html #jvc0v2     .jvc0w1{background:      url('/ga/images/photos/java_home_photo2.jpg') no-repeat top right;}
-html #jvc0v2.bg1 .jvc0w1{background-image:url('/ga/images/photos/java_home_photo1.jpg');}
-html #jvc0v2.bg2 .jvc0w1{background-image:url('/ga/images/photos/java_home_photo2.jpg');}
-html #jvc0v2.bg3 .jvc0w1{background-image:url('/ga/images/photos/java_home_photo3.jpg');}
-html #jvc0v2.bg4 .jvc0w1{background-image:url('/ga/images/photos/java_home_photo4.jpg');}
-html #jvc0v2.bg5 .jvc0w1{background-image:url('/ga/images/photos/java_home_photo5.jpg');}
+html #jvc0v2     .jvc0w1{background:      url('/jvav/ga/images/photos/java_home_photo2.jpg') no-repeat top right;}
+html #jvc0v2.bg1 .jvc0w1{background-image:url('/jvav/ga/images/photos/java_home_photo1.jpg');}
+html #jvc0v2.bg2 .jvc0w1{background-image:url('/jvav/ga/images/photos/java_home_photo2.jpg');}
+html #jvc0v2.bg3 .jvc0w1{background-image:url('/jvav/ga/images/photos/java_home_photo3.jpg');}
+html #jvc0v2.bg4 .jvc0w1{background-image:url('/jvav/ga/images/photos/java_home_photo4.jpg');}
+html #jvc0v2.bg5 .jvc0w1{background-image:url('/jvav/ga/images/photos/java_home_photo5.jpg');}
 /* @end   jvc0v2 : English Home */
 
 /* @group jvc0v3 : Home no sidebar */
@@ -516,7 +516,7 @@ html .jvc0v3 h1 {
 
 /* @group Sidebar Text Content */
 
-.jvcs0w0{background:url('/ga/images/jv0_sidebar_bg.gif') repeat-x top left; padding-bottom:3em;}
+.jvcs0w0{background:url('/jvav/ga/images/jv0_sidebar_bg.gif') repeat-x top left; padding-bottom:3em;}
 .jvcs0w0 h3, .jvcs0w0 h4, .jvcs0w0 p{padding-left:10px;padding-right:10px;}
 
 /*Lists*/
@@ -532,8 +532,8 @@ html .jvc0v3 h1 {
 .jvcs0 ul li.on a:hover {text-decoration: none;}
 
 /*Headers*/
-.jvcs0w0 h3{color:#fff;text-shadow:1px 1px 2px #666; background:#666 url('/ga/images/jv0_sidebar_head.gif') repeat-y;}
-.jvcs0w0 h4{color:#666;text-shadow:1px 1px 2px #fff; background:#D5D5D5 url('/ga/images/jv0_sidebar_subhead.gif') repeat-y;}
+.jvcs0w0 h3{color:#fff;text-shadow:1px 1px 2px #666; background:#666 url('/jvav/ga/images/jv0_sidebar_head.gif') repeat-y;}
+.jvcs0w0 h4{color:#666;text-shadow:1px 1px 2px #fff; background:#D5D5D5 url('/jvav/ga/images/jv0_sidebar_subhead.gif') repeat-y;}
 
 /*Forms*/
 .jvcs0w0 label{font-size: 1em;line-height:1.5;padding-left:0.5em;cursor: pointer;}
@@ -621,7 +621,7 @@ html .jvc0v3 h1 {
 /* @group Button */
 
 .jvdl0 a.jvdla0, .jvdl0x1, .jvdl0x2 {
-	background: url('/ga/images/jv0dl_a.png') no-repeat bottom left;
+	background: url('/jvav/ga/images/jv0dl_a.png') no-repeat bottom left;
 	display: block;
 	overflow: hidden;
 	margin: 0 auto;
@@ -669,7 +669,7 @@ html .jvc0v3 h1 {
 	margin-left: auto;
 }
 #helpcontent td{vertical-align:top;}
-td.gradientHeader{background:#666 url('/ga/images/jv0_sidebar_head.gif') repeat-y !important;}
+td.gradientHeader{background:#666 url('/jvav/ga/images/jv0_sidebar_head.gif') repeat-y !important;}
 td.gradientHeader a:visited,
 td.gradientHeader a:link{color:white; text-decoration:none;}
 
@@ -770,7 +770,7 @@ ul.bluearrows li {
 }
 ul.bluearrows li a {
 	padding-left: 1em;
-	background: url('/ga/im/ar_dbl_red.png') no-repeat left top;
+	background: url('/jvav/ga/im/ar_dbl_red.png') no-repeat left top;
 }
 
 ul.sidebar li {
@@ -779,7 +779,7 @@ ul.sidebar li {
 }
 ul.sidebar li a {
 	padding-left: 1.8em;
-	background: url('/ga/im/ar_dbl_red.png') no-repeat left;
+	background: url('/jvav/ga/im/ar_dbl_red.png') no-repeat left;
 }
 
 /* @group Fixes */
@@ -866,7 +866,7 @@ img.logo { float: left; margin:-0.25em 2em 0 0; }
 /* additional styles */
 ul.redarrows {
 	margin-top: 1em;
-	list-style-image: url('/ga/im/ar_dbl_red.png');
+	list-style-image: url('/jvav/ga/im/ar_dbl_red.png');
 }
 
 ul.logo { padding-left:3.5em; overflow:hidden; }

@@ -31,19 +31,19 @@ ul.newlist li { color: #ff0000; padding-left: 0; }
 
 TD.gradientHeader {padding-top:3px;padding-bottom:3px;padding-left:10px; color:#000;
                    text-transform:uppercase;vertical-align:middle;
-/*                   background-image: url(/ga/images/bg_subheader_gradient.gif);*/
+/*                   background-image: url(/jvav/ga/images/bg_subheader_gradient.gif);*/
 		line-height:23px;}
 a.gradientHeader {color:#000;text-decoration:none;}
 a.gradientHeader:hover {text-decoration:underline;}
 
 TD.longGradientHeader {padding-top:3px;padding-bottom:3px;padding-left:10px;
                        color:#fff;text-transform:uppercase;vertical-align:middle;
-                       background-image: url(/ga/images/bg_long_subheader_gradient.gif);line-height:18px;}
+                       background-image: url(/jvav/ga/images/bg_long_subheader_gradient.gif);line-height:18px;}
 a.longGradientHeader {color:#fff;text-decoration:none;}
 a.longGradientHeader:hover {text-decoration:underline;}
 TD.longGradientHeader650 {padding-top:3px;padding-bottom:3px;padding-left:10px;
                        color:#fff;text-transform:uppercase;vertical-align:middle;
-                       background-image: url(/ga/images/bg_long_subheader_gradient_650.gif);line-height:18px;}
+                       background-image: url(/jvav/ga/images/bg_long_subheader_gradient_650.gif);line-height:18px;}
 a.longGradientHeader650 {color:#fff;text-decoration:none;}
 a.longGradientHeader650:hover {text-decoration:underline;}
 
@@ -361,16 +361,16 @@ a:hover .termhighlight,
 a:hover{color:#D40;text-decoration:underline;}
 a:active .termhighlight,
 a:active{color:#C20;text-decoration:none;}/* @end Global Styles *//* = Components = *//* @group jvh0 Header */
-html .jvh0{background:url('/ga/images/jv0h.jpg') no-repeat top left;height:95px;width:777px;display:block;overflow:hidden;position:relative;margin:0 auto;}
+html .jvh0{background:url('/jvav/ga/images/jv0h.jpg') no-repeat top left;height:95px;width:777px;display:block;overflow:hidden;position:relative;margin:0 auto;}
 html .jvh0 p{font-size: 1.1em;position:absolute;bottom:0px;left:0px;width:100%;margin:0;padding-bottom:1em;text-align:center;}
 html .jvh0 p a:link,
 html .jvh0 p a:visited{color:#fff;text-decoration:none;padding:0.5em 0.5em 0.5em 1em;text-shadow:1px 1px 2px #791D0F;}
 html .jvh0 p a.on{font-weight:bold;}
 html .jvh0 p a.on,
-html .jvh0 p a:hover{background:url('/ga/images/jv0h_link_on.gif') no-repeat center left;text-shadow:none;}
+html .jvh0 p a:hover{background:url('/jvav/ga/images/jv0h_link_on.gif') no-repeat center left;text-shadow:none;}
 html .jvh0 p a.on,
 html .jvh0 p a:active{color:#fff;}
-html .jvl0{background:url('/ga/images/a.gif') no-repeat top left;height:73px;width:120px;display:block;overflow:hidden;text-indent:-999em;-webkit-transition:all 0.1s ease-in;position:absolute;top:12px;left:24px;}
+html .jvl0{background:url('/jvav/ga/images/a.gif') no-repeat top left;height:73px;width:120px;display:block;overflow:hidden;text-indent:-999em;-webkit-transition:all 0.1s ease-in;position:absolute;top:12px;left:24px;}
 html .jvl0:active{background-position:0px 1px;}/* @group Search Form */
 html .jvs0{position:absolute;top:16px;right:16px;left:auto;}
 html .jvs0,
@@ -381,7 +381,7 @@ html .jvs0w0{width:146px;margin:1.5em 0 1.5em 12px;padding:0;position:relative;}
 html .jvs0w0 input.text{position:absolute;top:0px;left:0px;float:none;width:124px;}
 html .jvs0w0 input.image{height:18px;width:19px;float:none;background-color:#fff;position:absolute;top:0px;*top:2px;right:0px;}/* @end Sidebar Search Form *//* @end Search Form *//* @end jvh0 Header *//* @group jvf0 Footer */
 html .jvf0{clear:both;height:50px;overflow:visible;width:777px;margin:0 auto;position:relative;padding-top:1em;text-align:left;}
-html .jvf0 .jvsun0{background:url('/ga/images/jv0_oracle.gif') no-repeat top left;height:22px;width:91px;display:block;overflow:hidden;text-indent:-999em;position:absolute;top:15px;right:4px;}
+html .jvf0 .jvsun0{background:url('/jvav/ga/images/jv0_oracle.gif') no-repeat top left;height:22px;width:91px;display:block;overflow:hidden;text-indent:-999em;position:absolute;top:15px;right:4px;}
 html .jvf0 .jvsun0:hover{opacity:0.9;}
 html .jvf0 .jvsun0:active{opacity:1;background-position:0px 1px;}
 html .jvf0 p{font-size:0.95em;line-height:1.3;margin:0;margin-left:16px;padding:0;padding-top:2px;color:#666;}
@@ -422,13 +422,13 @@ html #jvhx0 .jvhx0w1.hover a img,
 html #jvhx0 .jvhx0w1:hover a img{opacity:0.5;-moz-opacity:0.5;filter:alpha(opacity=50);}
 html #jvhx0 .jvhx0w1 a:hover img{opacity:1.0;-moz-opacity:1.0;filter:alpha(opacity=100);filter:none;/* padding-top:3px;*/}/* @group jvc0v2 :English Home */
 html .jvc0v2 .jvc0w1{width:auto;float:none;height:336px;padding-right:330px;}
-html .jvc0v2 h1{display:block;background:url('/ga/images/jv0ht.gif') no-repeat top center;height:173px;text-indent:-999em;margin-bottom:2em;position:relative;top:1em;}
-html #jvc0v2 .jvc0w1{background:url('/ga/images/photos/java_home_photo2.jpg') no-repeat top right;}
-html #jvc0v2.bg1 .jvc0w1{background-image:url('/ga/images/photos/java_home_photo1.jpg');}
-html #jvc0v2.bg2 .jvc0w1{background-image:url('/ga/images/photos/java_home_photo2.jpg');}
-html #jvc0v2.bg3 .jvc0w1{background-image:url('/ga/images/photos/java_home_photo3.jpg');}
-html #jvc0v2.bg4 .jvc0w1{background-image:url('/ga/images/photos/java_home_photo4.jpg');}
-html #jvc0v2.bg5 .jvc0w1{background-image:url('/ga/images/photos/java_home_photo5.jpg');}
+html .jvc0v2 h1{display:block;background:url('/jvav/ga/images/jv0ht.gif') no-repeat top center;height:173px;text-indent:-999em;margin-bottom:2em;position:relative;top:1em;}
+html #jvc0v2 .jvc0w1{background:url('/jvav/ga/images/photos/java_home_photo2.jpg') no-repeat top right;}
+html #jvc0v2.bg1 .jvc0w1{background-image:url('/jvav/ga/images/photos/java_home_photo1.jpg');}
+html #jvc0v2.bg2 .jvc0w1{background-image:url('/jvav/ga/images/photos/java_home_photo2.jpg');}
+html #jvc0v2.bg3 .jvc0w1{background-image:url('/jvav/ga/images/photos/java_home_photo3.jpg');}
+html #jvc0v2.bg4 .jvc0w1{background-image:url('/jvav/ga/images/photos/java_home_photo4.jpg');}
+html #jvc0v2.bg5 .jvc0w1{background-image:url('/jvav/ga/images/photos/java_home_photo5.jpg');}
 /* @end jvc0v2 :English Home *//* @group jvc0v3 :Home no sidebar */
 html .jvc0v3 .jvc0w1{width:auto;float:none;}
 html .jvc0v3 h1{display:block;}/* @end jvc0v2 :English Home *//* @end Homepage *//* @group Java In Action *//*.jvc0v4 .jvc0w1{width:595px;}
@@ -451,7 +451,7 @@ html .jvcs0 h3 a:visited,
 html .jvcs0 h3 a:link{color:#fff;}
 html .jvcs0 h4 a:visited,
 html .jvcs0 h4 a:link{color:#666;}/* @group Sidebar Text Content */
-html .jvcs0w0{background:url('/ga/images/jv0_sidebar_bg.gif') repeat-x top left;padding-bottom:3em;}
+html .jvcs0w0{background:url('/jvav/ga/images/jv0_sidebar_bg.gif') repeat-x top left;padding-bottom:3em;}
 html .jvcs0w0 h3,
 html .jvcs0w0 h4,
 html .jvcs0w0 p{padding-left:10px;padding-right:10px;}/*Lists*/
@@ -464,8 +464,8 @@ html .jvcs0w0 ul li a:link{display:block;}
 html .jvcs0 ul li.on a:visited,
 html .jvcs0 ul li.on a:link{color:#666;cursor:default;}
 html .jvcs0 ul li.on a:hover{text-decoration:none;}/*Headers*/
-html .jvcs0w0 h3{color:#fff;text-shadow:1px 1px 2px #666;background:#666 url('/ga/images/jv0_sidebar_head.gif') repeat-y;}
-html .jvcs0w0 h4{color:#666;text-shadow:1px 1px 2px #fff;background:#D5D5D5 url('/ga/images/jv0_sidebar_subhead.gif') repeat-y;}/*Forms*/
+html .jvcs0w0 h3{color:#fff;text-shadow:1px 1px 2px #666;background:#666 url('/jvav/ga/images/jv0_sidebar_head.gif') repeat-y;}
+html .jvcs0w0 h4{color:#666;text-shadow:1px 1px 2px #fff;background:#D5D5D5 url('/jvav/ga/images/jv0_sidebar_subhead.gif') repeat-y;}/*Forms*/
 html .jvcs0w0 label{font-size:1em;line-height:1.5;padding-left:0.5em;cursor:pointer;}
 html .jvcs0w0 input[type=checkbox]{cursor:pointer;}/* @end Sidebar Text Content *//* @end jvcs0 Sidebar *//* @group jvlt0 Link Table */
 html .jvlt0{}
@@ -493,7 +493,7 @@ html .jvdl0 p a:hover{text-shadow:1px 1px 2px #fff;}
 html .jvdl0 p a:active{text-shadow:none;}/* @group Button */
 html .jvdl0 a.jvdla0,
 html .jvdl0x1,
-html .jvdl0x2{background:url('/ga/images/jv0dl_a.') no-repeat bottom left;display:block;overflow:hidden;margin:0 auto;width:224px;}
+html .jvdl0x2{background:url('/jvav/ga/images/jv0dl_a.') no-repeat bottom left;display:block;overflow:hidden;margin:0 auto;width:224px;}
 html .jvdl0 a.jvdla0{color:white;text-decoration:none;text-align:center;position:relative;padding-bottom:41px;}
 html .jvdl0 a.jvdla0 .jvdl0x1{background-position:top left;height:28px;position:absolute;top:0px;left:0px;}
 html .jvdl0 a.jvdla0 .jvdl0x2{background-position:bottom left;height:65px;position:absolute;top:0px;left:0px;}
@@ -513,7 +513,7 @@ th.helpHeader { padding-top:3px;padding-bottom:3px;padding-left:10px; color:#000
 html th.helpHeader{background:#f0efef repeat-y !important;}
 html th.helpHeader a:visited,
 html th.helpHeader a:link{color:black; font-weight:bold; text-decoration:none; } */
-html td.gradientHeader{background:#F0EFEF /*url('/ga/images/jv0_sidebar_head.gif')*/ repeat-y !important;
+html td.gradientHeader{background:#F0EFEF /*url('/jvav/ga/images/jv0_sidebar_head.gif')*/ repeat-y !important;
 }
 html td.gradientHeader a:visited,
 html td.gradientHeader a:link{color:black; font-weight:bold; text-decoration:none;}/* @end Support the old Help content asis *//* = STYLES = *//* @group Individual Styles *//*Table with borders*/

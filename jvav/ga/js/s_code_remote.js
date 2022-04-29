@@ -17,4 +17,4 @@ try{oracle.truste.api.getConsentDecision().consentDecision;oracle.truste.api.get
 var enable_tracking=!0;-1==TRUSTeLevel||0==TRUSTeLevel?1!=navigator.doNotTrack&&1!=window.doNotTrack&&1!=navigator.msDoNotTrack||(enable_tracking=!1):1==TRUSTeLevel&&(enable_tracking=!1);if(enable_tracking){
 
 /*! S_CODE_REMOTE.JS - v1.00 */
-var s_account="devsunjava",sun_dynamicAccountSelection=!0,sun_dynamicAccountList="sunjava=java.com;devsunjava=.",s_siteid="javac:";if("undefined"!=typeof deployJava){var jreVersions=deployJava.getJREs();if(0==jreVersions.length)var s_prop24="None";else s_prop24=jreVersions[parseInt(jreVersions.length-1)]}var fullURL="/ga/js/metrics_group1.js";document.write('<script language="JavaScript" src="'+fullURL+'"><\/script>')}
+var s_account="devsunjava",sun_dynamicAccountSelection=!0,sun_dynamicAccountList="sunjava=java.com;devsunjava=.",s_siteid="javac:";if("undefined"!=typeof deployJava){var jreVersions=deployJava.getJREs();if(0==jreVersions.length)var s_prop24="None";else s_prop24=jreVersions[parseInt(jreVersions.length-1)]}var fullURL="/jvav/ga/js/metrics_group1.js";document.write('<script language="JavaScript" src="'+fullURL+'"><\/script>')}
