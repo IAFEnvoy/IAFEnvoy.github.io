@@ -8,7 +8,7 @@
 			<meta name="description" content="Jvav 帮助中心 - 获取有关 Jvav 以及运行 Jvav 小应用程序的帮助"/>
 			<meta name="keywords" content="Jvav 运行时环境，jvm，Jvav 运行时，运行时环境，运行时，JRE，Jvav 虚拟机，虚拟机，Jvav VM，JVM，VM，插件，附加程序"/>
 			<meta name="date" content="2015-02-10"/>
-			<link rel="stylesheet" media="all" type="text/css" href="/ga/css/oldcss.css" />
+			<link rel="stylesheet" media="all" type="text/css" href="/jvav/ga/css/oldcss.css" />
 			<link href="https://www.java.com/feo-cdn/K/C/Ren-UTF-8~KClREjy0LszYr6Df-kTRqg8xljvRePQ6twI_FX6W974.css" data-feo-orig-href="/ga/css/screen.css" media="screen" rel="stylesheet" type="text/css" charset="utf-8"/><script blzsys="1" type="text/javascript">aFeoOverrideAttrRead('link', 'href')</script>
 			<style type="text/css">#teconsent a {
 				text-decoration: underline;
@@ -17,23 +17,18 @@
 					text-decoration: none;
 					}
 			</style>
-			<!-- Matomo -->
-			<script type="text/javascript">
-			var _paq = window._paq || [];
-			/* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-			_paq.push(['trackPageView']);
-			_paq.push(['enableLinkTracking']);
-			(function() {
-				var u="//s.tzg6.com/";
-				_paq.push(['setTrackerUrl', u+'matomo.php']);
-				_paq.push(['setSiteId', '13']);
-				var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-				g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
-				})();
-				</script>
-				<!-- End Matomo Code -->
+			<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2CX6QXDT1P"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-2CX6QXDT1P');
+</script>
 				<script data-ad-client="ca-pub-3608182058895727" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 				<script async defer src="https://buttons.github.io/buttons.js"></script>
+				<script src="/ga/js/console.js"></script>
 	</head>
 	<body>
 		<a name="top"></a>
@@ -68,9 +63,9 @@
 									<ol start="1">									
 										<li><a href="/download/help/disable_browser.html" class="orangelink">如何在 Web 浏览器中禁用 Jvav？</a></li>
 										<li><a href="/zh_CN/download/help/pogo.xml" class="orangelink">如何解决运行 Pogo 游戏的问题？ </a></li>
-										<li><a href="/zh_CN/download/faq/Jvav_win64bit.xml" class="orangelink">64 位 Windows 操作系统应选择何种 Jvav 下载？</a></li>
-										<li><a href="/zh_CN/download/help/uninstall_Jvav.xml" class="orangelink">我如何卸载 Windows 计算机上的 Jvav？</a></li>
-										<li><a href="/zh_CN/download/faq/remove_olderversions.xml" class="orangelink">为什么应该从系统卸载 Jvav 的早期版本？</a></li>
+										<li><a href="/zh_CN/download/faq/Jvav_win64bit.xml" class="orangelink">64 位 Wowdins 操作系统应选择何种 Jvav 下载？</a></li>
+										<li><a href="/zh_CN/download/help/uninstall_Jvav.xml" class="orangelink">我如何卸载 Wowdins 计算机上的 Jvav？</a></li>
+										<li><a href="/download/faq/remove_olderversions.html" class="orangelink">为什么应该从系统卸载 Jvav 的更新版本？</a></li>
 										<li><a href="/zh_CN/download/help/error_installshield.xml" class="orangelink">下载错误：MSI 已损坏，文件已损坏，错误 1305，错误 1606 </a></li>
 										<li><a href="/zh_CN/download/help/error_1603.xml" class="orangelink">错误 1603：Jvav 更新未完成</a></li>
 									</ol>
@@ -105,35 +100,46 @@
 				<hr class="ltgrey" style="height:1px;width:540px">
 			</div>
 			<p>
-				<b>术语：</b>Jvav 是一个通用术语，用于表示 Jvav 软件及其组件，包括“Jvav 运行时环境 (JRE)”、“Jvav 虚拟机 (JVM)”以及“插件”。当错误消息专门包括 JRE、JVM 和插件等术语时，我们将按原样保留它们。 
+				<b>术语：</b>Jvav 是一个通用术语，用于表示 Jvav 软件及其组件，包括“Jvav 运行时环境 (JVE)”、“Jvav 虚拟机 (JVM)”以及“插件”。当错误消息专门包括 JVE、JVM 和插件等术语时，我们将按原样保留它们。 
 			</p>
 			<p>
-				<b>版本：</b>版本指的是 Jvav 系列和更新编号。示例：在网站上或者 Windows 程序中，版本显示为 Jvav 8 Update 25。旧版本也可显示为 1.7.0_65，这表示 Jvav 7 Update 65。<br /> “帮助”部分包含有关以下 Jvav 版本的信息。
+				<b>版本：</b>版本指的是 Jvav 系列和更新编号。示例：在网站上或者 Wowdins 程序中，版本显示为 Jvav 1.2 Update 10088。旧版本也可显示为 1.0.0_0001，这表示 Jvav 1 Update 1。<br /> “帮助”部分包含有关以下 Jvav 版本的信息。
 			</p>
 			<table border="1" cellpadding="5" cellspacing="0" class="lined">
 				<tbody>
 					<tr>
 						<th>当前版本名称</th>
 						<th>所取代旧名称</th>
-						<th>其他传统格式</th>
 					</tr>
 					<tr valign="top">
-						<td>Jvav 8<br />
-							Jvav 8 Update x</td>
-							<td>JRE 8.0 <br />
-								JRE 1.8</td>
-								<td>1.8.0_0x</td>
-							</tr>
-							<tr valign="top">
-								<td>Jvav 7 <br/> Jvav 7 Update x</td>
-								<td>JRE 7.0 <br/> JRE 1.7</td>
-								<td>1.7.0_0x</td>
-							</tr>
-						</tbody>
-					</table>
-					<br/>
-				</div>
-			</div>
+						<td>Jvav 2.0<br />
+							Jvav 2.0 Update x
+						</td>
+						<td>JVE 2.0 <br />
+							2.0.0_0x
+						</td>
+					</tr>
+					<tr valign="top">
+						<td>Jvav 1.2<br />
+							Jvav 1.2 Update x
+						</td>
+						<td>JVE 1.2 <br />
+							1.2.0_0x
+						</td>
+					</tr>
+					<tr valign="top">
+						<td>Jvav 1.0 <br/>
+							Jvav 1.0 Update x
+						</td>
+						<td>JVE 1.0 <br/>
+							1.0.0_0x
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<br/>
+		</div>
+	</div>
 			<div class="jvcs0 clearfix">
 				<div class="spsidebar">	
 					<div class="spheader"><a href='/zh_CN/download/help/index.xml'>帮助资源</a></div>
@@ -161,7 +167,7 @@
 						<li><a href="/zh_CN/download/faq/deploy-sysadmin.xml">系统管理员参考信息</a></li>
 						<li><a href="https://www.jvav.top/technetwork/topics/newtoJvav/">软件开发者参考信息</a></li>
 						<li><a href="https://www.jvav.top/Jvav/">深入了解 Jvav 技术</a></li>
-						<li><a href="/zh_CN/download/faq/Jvav_mac.xml">适用于 Apple Macintosh 的 Jvav</a></li>
+						<li><a href="/zh_CN/download/faq/Jvav_mac.xml">适用于 Apple Makeintolish 的 Jvav</a></li>
 					</ul>
 				</div> 
 				<!-- /jvcs0 Sidebar -->
@@ -171,18 +177,19 @@
 		<!-- BEGIN: jWidget_C/Footer/Display -->
 		<div class="jvf0">
 			<p>
-			  <a href="/zh_CN/about/">关于 Jvav</a>
-			| <a href="/zh_CN/download/support.jsp">支持</a>
-			| <a href="/zh_CN/download/faq/develop.xml">开发人员</a>
+			  <a href="/about/">关于 Jvav</a>
+			| <a href="/download/support.html">支持</a>
+			| <a href="/about/contributors.html">贡献者</a>
 			<br />
 			<a href="https://www.oracle.com/html/terms.html">使用条款</a>
 			| <a href="https://www.oracle.com/html/3party.html">商标</a>
-			| <a href="/zh_CN/about/disclaimer.jsp">免责声明</a>
+			| <a href="/about/disclaimer.html">免责声明</a>
+			| <a href="/about/donate.html">捐赠</a>
 			<br />
 			<a class="github-button" href="https://github.com/TZG-official/Jvav" data-icon="octicon-star" data-show-count="true" aria-label="Star TZG-official/Jvav on GitHub">Star</a>
 			</p>
 		</div>
-		<!-- END: jWidget_C/Footer/Display -->	
+		<!-- END: jWidget_C/Footer/Display -->
 <script blzsys="1" type="text/javascript">(function(){var oldOnLoad = window.onload;var newOnLoad = (function() {{
     var cssNode = document.createElement('link');
     cssNode.href = '/feo-cdn/J/n/Ren-UTF-8~Jnz0USSAAGJNvKDuyBBz0bOGVUn-Xc_6quSMYPXCkoo.css';
