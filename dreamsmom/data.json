@@ -63,6 +63,13 @@
         "location": "402",
         "allow": "allAllow",
         "temp": "0℃"
+      },
+      {
+        "name": "臭主播纸鸢开播通知群",
+        "stats": "群号：897683779",
+        "location": "403",
+        "allow": "allAllow",
+        "temp": "0℃"
       }
     ]
   },
