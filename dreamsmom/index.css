@@ -1,0 +1,122 @@
+.normalClass {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.allAllow {
+  background-color: #CCFF99;
+  color: #FF9966;
+  border-color: transparent;
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+}
+
+.allAllow:hover {
+  background-color: #99CC33;
+  color: #CC6600;
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+}
+
+.inviteAllow {
+  background-color: #FFCCCC;
+  color: #A63D32;
+  border-color: transparent;
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+}
+
+.inviteAllow:hover {
+  background-color: #FF9999;
+  color: #752368;
+  border-color: transparent;
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+}
+
+.fanAllow {
+  background-color: #CCFFFF;
+  color: #6C0AAB;
+  border-color: transparent;
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+}
+
+.fanAllow:hover {
+  background-color: #99CCCC;
+  color: #45036F;
+  border-color: transparent;
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+}
+
+.captainAllow {
+  background-color: #F5E56B;
+  color: #C0708A;
+  border-color: transparent;
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+}
+
+.captainAllow:hover {
+  background-color: #E6B422;
+  color: #531227;
+  border-color: transparent;
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+}
+
+.allNotAllow {
+  background-color: #FFCB99;
+  color: #47885E;
+  border-color: transparent;
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+}
+
+.allNotAllow:hover {
+  background-color: #FEAA51;
+  color: #2F5D50;
+  border-color: transparent;
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+}
+
+.defaultButton {
+  background-color: #ffffff;
+  color: #000000;
+  border-color: transparent;
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+}
+
+.defaultButton:hover {
+  background-color: #CCCCCC;
+  color: #003399;
+  border-color: transparent;
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+}
