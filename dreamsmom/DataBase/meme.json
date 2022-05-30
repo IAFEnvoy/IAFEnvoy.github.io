@@ -9,7 +9,7 @@
 }, {
     "data": "梦妈给SMP的两个群（201和203）设置的名字和群头像都是一样的，导致一堆人消息老发错群。",
     "author": "",
-    "url": "info?location=history"
+    "url": "info.html?misc&history"
 }, {
     "data": "Dragon_ts有个外号叫做末影龙姐姐。",
     "author": "",
@@ -41,13 +41,13 @@
 }, {
     "data": "SMP群有一个晚上聊了七十几个话题",
     "author": "",
-    "url": "meme?location=1"
+    "url": "info.html?meme&1"
 }, {
   "data": "4/11日梦妈直播前喝了点酒，结果成功sub16",
   "author": "",
-  "url": "meme?location=2"
+  "url": "info.html?meme&2"
 },{
   "data": "梦妈粉丝其实都是美食，鳕鱼龙肉薄酒西瓜片菠萝包",
   "author": "冰火",
-  "url": "meme?location=3"
+  "url": "info.html?meme&3"
 }]

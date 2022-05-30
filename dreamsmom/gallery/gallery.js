@@ -1,7 +1,7 @@
 window.onload = function() {
-    var this_url = document.baseURI.replace("gallery.html", "").replace(location.search, "");
-    var url = this_url + "data.txt";
-    var request = new XMLHttpRequest();
+    let this_url = document.baseURI.replace("gallery.html", "").replace(location.search, "");
+    let url = this_url + "data.txt";
+    let request = new XMLHttpRequest();
     request.open("GET", url);
     request.send(null);
     request.onloadend = function() {

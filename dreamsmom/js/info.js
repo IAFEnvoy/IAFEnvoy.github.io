@@ -1,11 +1,11 @@
 window.onload = function() {
-    var searchStr = location.search;
-    searchStr = searchStr.substr(1);
-    var searchs = searchStr.split("&");
-    var ids = searchs[0].split("=");
-    var this_url = document.baseURI.replace("info.html", "").replace("info", "").replace(location.search, "");
-    var url = this_url + "DataBase/info/" + ids[1] + ".txt";
-    var request = new XMLHttpRequest();
+    let searchStr = location.search;
+    searchStr = searchStr.substring(1);
+    let searchs = searchStr.split("&");
+    let category=searchs[0];
+    let id = searchs[1];
+    let url = `DataBase/${category}/${id}.txt`;
+    let request = new XMLHttpRequest();
     request.open("GET", url);
     request.send(null);
     request.onloadend = function() {
@@ -15,8 +15,7 @@ window.onload = function() {
             const parser = new marked.Parser();
             const html = parser.parse(tokens);
             document.getElementById("data").innerHTML = html;
-        } else {
+        } else 
             alert("这里还没有写完哦~");
-        }
     }
 }

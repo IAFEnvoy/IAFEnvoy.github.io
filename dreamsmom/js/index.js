@@ -9,8 +9,8 @@ async function loadTable() {
   table = document.getElementById('table');
 
   for (i = 0; i < 8; i++) {
-    var counter = 0;
-    for (var { } in result[i]['data']) {
+    let counter = 0;
+    for (let { } in result[i]['data']) {
       buttonNode = document.createElement('button');
       buttonNode.className = result[i]['data'][counter]['allow'];
       buttonNode.style.position = 'absolute';
@@ -21,7 +21,7 @@ async function loadTable() {
       buttonNode.name = result[i]['data'][counter]['location'];
 
       buttonNode.onclick = function () {
-        var url = document.baseURI.replace('index.html', '').replace('index', '') + 'info?location=' + this.name;
+        let url = document.baseURI.replace('index.html', '').replace('index', '') + 'info.html?info&' + this.name;
         window.open(url, '_blank');
       }
 
@@ -42,7 +42,7 @@ async function loadTable() {
 async function loadMeme() {
   memeResult = await downloadAssets('DataBase/meme.json');
   memeCnt = 0;
-  for (var { } in memeResult) memeCnt++;
+  for (let { } in memeResult) memeCnt++;
   memeNo = Math.floor(Math.random() * memeCnt);
   document.getElementById('meme').innerText = '今日笑话：' + memeResult[memeNo]['data'];
   document.getElementById('memeAuthor').innerText = memeResult[memeNo]['author'] != '' ? '---' + memeResult[memeNo]['author'] : '';
@@ -55,17 +55,17 @@ function seeMemeDetail() {
 
 function clock() {
   //yyyy/mm/dd hh:mm:ss
-  var timerNode = document.getElementById('timer');
-  var date = new Date();
-  var string = '当前时间：' + betterShow(date.getFullYear(), 4) + '/' + betterShow(date.getMonth() + 1, 2) + '/' + betterShow(date.getDate(), 2) + ' ';
+  let timerNode = document.getElementById('timer');
+  let date = new Date();
+  let string = '当前时间：' + betterShow(date.getFullYear(), 4) + '/' + betterShow(date.getMonth() + 1, 2) + '/' + betterShow(date.getDate(), 2) + ' ';
   string += betterShow(date.getHours(), 2) + ':' + betterShow(date.getMinutes(), 2) + ':' + betterShow(date.getSeconds(), 2);
   timerNode.innerText = string;
 }
 
 function betterShow(num, digit) {
-  var string = '';
-  var num_string = num.toString();
-  for (var i = 0; i < digit - num_string.length; i++)
+  let string = '';
+  let num_string = num.toString();
+  for (let i = 0; i < digit - num_string.length; i++)
     string += '0';
   string += num_string;
   return string;
@@ -76,7 +76,6 @@ function dxzp() {
   window.open('https://www.bilibili.com/video/BV1GJ411x7h7', '_blank');
 }
 
-
 const downloadAssets = async (url) => {
   try {
     console.log(url);
@@ -84,4 +83,9 @@ const downloadAssets = async (url) => {
   } catch (error) {
     return {};
   }
+}
+
+const openURL=()=>{
+  let url = document.baseURI.replace('index.html', '').replace('index', '') + 'info?location=fan';
+  window.open(url, '_blank');
 }
