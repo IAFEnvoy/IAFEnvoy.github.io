@@ -1,10 +1,10 @@
-window.onload = function () {
+window.onload = () => {
   loadTable();
   loadMeme();
   clock();
 }
 
-async function loadTable() {
+const loadTable = async () => {
   result = await downloadAssets('data.json');
   table = document.getElementById('table');
 
@@ -14,32 +14,30 @@ async function loadTable() {
       buttonNode = document.createElement('button');
       buttonNode.className = result[i]['data'][counter]['allow'];
       buttonNode.style.position = 'absolute';
-      buttonNode.style.marginLeft = (300 + 300 * counter) + 'px';
-      buttonNode.style.marginTop = (50 * i + 55) + 'px';
+      buttonNode.style.marginLeft = `${300 + 300 * counter}px`;
+      buttonNode.style.marginTop = `${50 * i + 55}px`;
       buttonNode.style.width = '300px';
       buttonNode.style.height = '50px';
       buttonNode.name = result[i]['data'][counter]['location'];
 
-      buttonNode.onclick = function () {
-        let url = document.baseURI.replace('index.html', '').replace('index', '') + 'info.html?info&' + this.name;
-        window.open(url, '_blank');
+      const id = result[i]['data'][counter]['location'];
+      buttonNode.onclick = () => {
+        window.open(`info.html?info&${id}`, '_blank');
       }
 
       roomNode = document.createElement('span');
       roomNode.className = 'normalClass';
       roomNode.style.width = '300px';
-      roomNode.innerHTML = result[i]['data'][counter]['location'] + ' ' + result[i]['data'][counter]['name'] + '<br/>'
-        + result[i]['data'][counter]['stats'] + ' 热度：' + result[i]['data'][counter]['temp'];
+      roomNode.innerHTML = `${result[i]['data'][counter]['location']} ${result[i]['data'][counter]['name']}<br>
+      ${result[i]['data'][counter]['stats']} 热度：${result[i]['data'][counter]['temp']}`;
       buttonNode.appendChild(roomNode);
-
       table.appendChild(buttonNode);
-
       counter++;
     }
   }
 }
 
-async function loadMeme() {
+const loadMeme = async () => {
   memeResult = await downloadAssets('DataBase/meme.json');
   memeCnt = 0;
   for (let { } in memeResult) memeCnt++;
@@ -48,12 +46,12 @@ async function loadMeme() {
   document.getElementById('memeAuthor').innerText = memeResult[memeNo]['author'] != '' ? '---' + memeResult[memeNo]['author'] : '';
 }
 
-function seeMemeDetail() {
+const seeMemeDetail = () => {
   if (memeResult[memeNo]['url'] != '')
     window.open(memeResult[memeNo]['url'], '_blank');
 }
 
-function clock() {
+const clock = () => {
   //yyyy/mm/dd hh:mm:ss
   let timerNode = document.getElementById('timer');
   let date = new Date();
@@ -62,7 +60,7 @@ function clock() {
   timerNode.innerText = string;
 }
 
-function betterShow(num, digit) {
+const betterShow = (num, digit) => {
   let string = '';
   let num_string = num.toString();
   for (let i = 0; i < digit - num_string.length; i++)
@@ -72,7 +70,7 @@ function betterShow(num, digit) {
 }
 setInterval(clock, 1000);
 
-function dxzp() {
+const dxzp = () => {
   window.open('https://www.bilibili.com/video/BV1GJ411x7h7', '_blank');
 }
 
@@ -85,7 +83,7 @@ const downloadAssets = async (url) => {
   }
 }
 
-const openURL=()=>{
+const openURL = () => {
   let url = document.baseURI.replace('index.html', '').replace('index', '') + 'info?location=fan';
   window.open(url, '_blank');
 }
