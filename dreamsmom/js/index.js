@@ -83,8 +83,8 @@ const downloadAssets = async (url) => {
   }
 }
 
-const openURL = () => {
-  let url = document.baseURI.replace('index.html', '').replace('index', '') + 'info?location=fan';
+const openFanPage = () => {
+  let url = document.baseURI.replace('index.html', '').replace('index', '') + 'info.html?fan';
   window.open(url, '_blank');
 }
 
