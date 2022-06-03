@@ -1,7 +1,0 @@
-# 301 Xor VII Launcher Development
-
-锁群/202成员可进
-
-管理：小黑，冰火，Dragon_ts
-
-由小黑（MC_XiaoHei）独立开发的纯C++/Qt5我的世界JE启动器：Xor VII Launcher的内测群
