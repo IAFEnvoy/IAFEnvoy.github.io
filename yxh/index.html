@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <title>营销号生成器</title>
+    <script src="yxh.js"></script>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div style="position:absolute;left: 350px;"> 
+        <h1>营销号文章生成器</h1>
+    </div>
+    <div div style="position:absolute;left: 20px;top:100px">
+        <div>
+            <label>要说明的对象：</label> <br>
+            <input id="object">
+        </div>
+        <div>
+            <label>要说明的对象特点：</label> <br>
+            <input id="describe1">
+        </div>
+        <div>
+            <label>这个特点的另一种说法：</label> <br>
+            <input id="describe2">
+        </div>
+        <div>
+            <label>营销号的名字（留空则自动生成）：</label> <br>
+            <input id="author">
+        </div>
+        <button onclick="generate()">生成</button>
+    </div>
+    <div style="position:absolute;left:450px;top:80px">
+        <textarea id="textholder" style="width:500px;height:300px"></textarea>
+    </div>
+</body>
