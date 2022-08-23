@@ -9,6 +9,8 @@ const generate = () => {
     let des1 = document.getElementById('describe1').value;
     let des2 = document.getElementById('describe2').value;
     let aut = document.getElementById('author').value;
-    let s = getNewText(obj, des1, des2, aut == '' ? undefined : aut);
+    let s = getNewText(obj, des1, des2 == '' ? des1 : des2, aut == '' ? undefined : aut);
     document.getElementById('textholder').innerHTML = s;
 }
+
+const copy = () => navigator.clipboard.writeText(document.getElementById('textholder').innerHTML);

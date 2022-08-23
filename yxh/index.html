@@ -14,22 +14,23 @@
     </div>
     <div div style="position:absolute;left: 20px;top:100px">
         <div>
-            <label>要说明的对象：</label> <br>
+            <label>名字：</label> <br>
             <input id="object">
         </div>
         <div>
-            <label>要说明的对象特点：</label> <br>
+            <label>事件：</label> <br>
             <input id="describe1">
         </div>
         <div>
-            <label>这个特点的另一种说法：</label> <br>
+            <label>原因（留空则同上）：</label> <br>
             <input id="describe2">
         </div>
         <div>
-            <label>营销号的名字（留空则自动生成）：</label> <br>
+            <label>作者（留空则自动生成）：</label> <br>
             <input id="author">
         </div>
         <button onclick="generate()">生成</button>
+        <button onclick="copy()">复制</button>
     </div>
     <div style="position:absolute;left:450px;top:80px">
         <textarea id="textholder" style="width:500px;height:300px"></textarea>
