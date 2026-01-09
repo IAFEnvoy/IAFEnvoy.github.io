@@ -3,7 +3,7 @@ window.addEventListener("load", _ => {
     refreshTime()
 })
 const refreshTime = _ => {
-    let create_time = Math.round(new Date(Date.UTC(2005, 12, 27, 5, 45, 0)).getTime() / 1000);
+    let create_time = Math.round(new Date(Date.UTC(2005, 11, 27, 5, 45, 0)).getTime() / 1000);
     let timestamp = Math.round((new Date().getTime() + 8 * 60 * 60 * 1000) / 1000);
     let currentTime = secondToDate(timestamp - create_time);
     document.getElementById('time').innerText = currentTime[0] + '年' + currentTime[1] + '天' + currentTime[2] + '小时' + currentTime[3] + '分钟' + currentTime[4] + '秒';
