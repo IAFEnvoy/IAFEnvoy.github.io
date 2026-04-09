@@ -13,6 +13,23 @@
     <h1>16:10 图片合成器</h1>
     <div class="controls">
       <input type="file" id="fileInput" accept="image/*">
+
+      <fieldset class="mode-fieldset">
+        <legend>背景模式</legend>
+        <label><input type="radio" name="mode" id="modeBlur" value="blur" checked> 高斯模糊</label>
+        <label><input type="radio" name="mode" id="modeSolid" value="solid"> 纯色填充</label>
+      </fieldset>
+
+      <div class="bg-options">
+        <label><input type="checkbox" id="autoBg"> 自动取色作为背景</label>
+        <label>背景颜色: <input type="color" id="bgColor" value="#FFFFFF" disabled></label>
+      </div>
+
+      <div class="side-colors">
+        <label>左侧颜色: <input type="color" id="leftColor" value="#000000"></label>
+        <label>右侧颜色: <input type="color" id="rightColor" value="#000000"></label>
+      </div>
+
       <label for="blurRange">高斯模糊: <span id="blurValue">20</span> px</label>
       <input type="range" id="blurRange" min="0" max="200" value="20">
       <button id="generateBtn" disabled>生成预览</button>
