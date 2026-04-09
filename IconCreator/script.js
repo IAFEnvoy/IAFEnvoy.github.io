@@ -126,10 +126,20 @@
 
     const mode = document.querySelector('input[name="mode"]:checked')?.value || 'blur';
 
+    // 判断是否需要在放大时使用最近邻采样
+    const stretchScaleX = width / currentImage.width;
+    const stretchScaleY = height / currentImage.height;
+    const needNearestForStretch = stretchScaleX > 1 || stretchScaleY > 1;
+    const needNearestForCentered = scale > 1;
+
     if (mode === 'blur') {
       const blurPx = Number(blurRange.value) || 0;
       ctx.save();
       ctx.filter = `blur(${blurPx}px)`;
+      if (needNearestForStretch) {
+        ctx.imageSmoothingEnabled = false;
+        if ('imageSmoothingQuality' in ctx) ctx.imageSmoothingQuality = 'low';
+      }
       ctx.drawImage(currentImage, 0, 0, currentImage.width, currentImage.height, 0, 0, width, height);
       ctx.restore();
     } else {
@@ -142,8 +152,14 @@
       }
     }
 
-    // 绘制居中缩放后的原图
+    // 绘制居中缩放后的原图（放大时使用最近邻插值以避免模糊）
+    ctx.save();
+    if (needNearestForCentered) {
+      ctx.imageSmoothingEnabled = false;
+      if ('imageSmoothingQuality' in ctx) ctx.imageSmoothingQuality = 'low';
+    }
     ctx.drawImage(currentImage, 0, 0, currentImage.width, currentImage.height, dx, dy, dw, dh);
+    ctx.restore();
 
     downloadBtn.disabled = false;
   }
