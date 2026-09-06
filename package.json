@@ -1,0 +1,27 @@
+{
+  "name": "main",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "oxlint",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@arwes/animated": "^1.0.0-next.25020502",
+    "@arwes/animator": "^1.0.0-next.25020502",
+    "@arwes/bgs": "^1.0.0-next.25020502",
+    "@arwes/effects": "^1.0.0-next.25020502",
+    "@arwes/frames": "^1.0.0-next.25020502",
+    "@arwes/theme": "^1.0.0-next.25020502",
+    "@arwes/text": "^1.0.0-next.25020502"
+  },
+  "devDependencies": {
+    "@types/node": "^24.13.3",
+    "oxlint": "^1.79.0",
+    "typescript": "~6.0.2",
+    "vite": "^8.2.2"
+  }
+}

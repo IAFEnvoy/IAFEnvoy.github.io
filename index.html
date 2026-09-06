@@ -1,134 +1,133 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="zh-CN">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport"
-        content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
-    <title>冰火の小窝</title>
-    <script src="index.js"></script>
-    <link rel="stylesheet" type="text/css" href="index.css" />
-    <link rel="icon" href="./favicon.png" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IAFEnvoy // Home</title>
 </head>
 
 <body>
-    <div id="box">
-        <!-- 个人资料卡片 -->
-        <div class="meBox">
-            <!-- 头像 -->
-            <div class="headPhoto"></div>
-            <!-- 介绍 -->
-            <div class="meBox-title">
-                <p>I'm IAFEnvoy</p>
-                <div class="fg"></div>
+  <div id="root">
+    <main class="app-shell"><canvas class="grid-background" aria-hidden="true"></canvas>
+      <aside class="directory-rail" aria-label="Page directory"><span class="directory-label">INDEX</span>
+        <div class="directory-line"></div><button class="directory-item is-active"
+          data-page="0"><b>01</b><span>COMMAND</span></button><button class="directory-item"
+          data-page="1"><b>02</b><span>OPERATIONS</span></button><button class="directory-item"
+          data-page="2"><b>03</b><span>ARCHIVE</span></button>
+      </aside>
+      <div class="page-viewport" tabindex="0">
+        <section class="page-section page-command">
+          <header class="topbar">
+            <div class="brand-lockup"><span class="brand-mark">◈</span><span>IAFENVOY // HOME</span></div>
+            <div class="topbar-readout"><span class="readout-dot"></span><span>ONLINE</span><span
+                class="readout-divider"></span><span id="utc-time">UTC --:--:--</span></div>
+          </header>
+          <div class="home-grid">
+            <article class="profile-card panel-frame">
+              <div class="panel-inner"><svg class="panel-corners" xmlns="http://www.w3.org/2000/svg"
+                  preserveAspectRatio="none"></svg>
+                <div class="profile-content">
+                  <div class="head-photo"></div>
+                  <p class="profile-kicker">PERSONAL NODE // 07</p>
+                  <h1>I'm IAFEnvoy</h1>
+                  <div class="profile-rule"></div>
+                  <div class="profile-text">
+                    <p>地球 Online 游玩时间</p><strong id="time">正在同步...</strong>
+                    <p>软件全栈工程师（当然还没工作）</p>
+                  </div>
+                  <div class="profile-links"><a href="https://github.com/IAFEnvoy" target="_blank"
+                      rel="noreferrer">GitHub <img class="external-link-icon" src="/external-link-svgrepo-com.svg" alt="" /></a><a href="https://discord.gg/NDzz2upqAk" target="_blank"
+                      rel="noreferrer">Discord <img class="external-link-icon" src="/external-link-svgrepo-com.svg" alt="" /></a></div>
+                </div>
+              </div>
+            </article>
+            <article class="terminal-window">
+              <div class="terminal-bar">
+                <div class="terminal-dots"><i class="dot-red"></i><i class="dot-yellow"></i><i class="dot-green"></i>
+                </div><span>iafenvoy - bash</span>
+              </div>
+              <div class="terminal-body">
+                <p><span class="prompt-user">root@iafenvoy</span> <span class="prompt-path">~</span> <span
+                    class="prompt-command">vim /me.txt</span></p>
+                <p>世有八气，其中炎热之气与寒冰之气分别处于世界南方荒漠与北方雪原。</p>
+                <p>一日两气于中原相遇，凝聚成人形，此为冰火使者。</p>
+                <del>都是什么玩意</del>
+                <p class="terminal-muted">学习过 <b>Assembly, C, C++, C#, Go, Java, JavaScript, Python</b></p>
+                <p class="terminal-muted">会玩 <b>After Effect</b></p>
+                <div id="terminal-output" class="terminal-output" aria-live="polite"></div>
+                <p class="terminal-cursor"><span class="prompt-user">root@iafenvoy</span> <span
+                    class="prompt-path">~</span> <input id="terminal-input" class="terminal-input" type="text"
+                    aria-label="终端命令输入" autocomplete="off" autocapitalize="off" spellcheck="false" /></p>
+              </div>
+            </article>
+          </div>
+          <button class="home-scroll-hint" type="button" aria-label="查看更多">
+            <span class="home-scroll-label">查看更多</span>
+            <span aria-hidden="true"></span>
+          </button>
+        </section>
+        <section class="page-section page-operations">
+          <header class="mc-header">
+            <div class="mc-title-lockup"><img src="/mc/main.webp" alt="Minecraft JE 模组图标" /><div><p
+                class="eyebrow">MINECRAFT JAVA EDITION MODDING</p><h2>Minecraft JE 模组</h2></div></div>
+            <span class="mc-index">02 // MOD LIBRARY</span>
+          </header>
+          <div class="mc-showcase">
+            <div class="mc-card"><div class="mc-card-frame"><svg class="panel-corners mc-card-corners"
+                  xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"></svg><img src="/mc/iceandfire.webp"
+                  alt="冰火传说社区版" /></div><h3>冰火传说社区版</h3></div>
+            <div class="mc-card"><div class="mc-card-frame"><svg class="panel-corners mc-card-corners"
+                  xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"></svg><img src="/mc/jupiter.webp"
+                  alt="Jupiter" /></div><h3>Jupiter</h3></div>
+            <div class="mc-card"><div class="mc-card-frame"><svg class="panel-corners mc-card-corners"
+                  xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"></svg><img src="/mc/origins.webp"
+                  alt="起源 NeoForge 版" /></div><h3>起源 NeoForge 版</h3></div>
+            <a class="mc-more" href="https://mods.iafenvoy.com" target="_blank" rel="noreferrer"><span
+                class="mc-more-title">查看更多 <img src="/external-link-svgrepo-com.svg" alt="" /></span><span
+                class="mc-more-url">MODS.IAFENVOY.COM</span></a>
+          </div>
+        </section>
+        <section class="page-section page-archive">
+          <div class="rmc-panel">
+            <header class="rmc-header">
+              <div class="rmc-title-lockup">
+                <img src="/rmc/icon.webp" alt="RMCreator 图标" />
+                <h2>RMCreator</h2>
+              </div>
+              <div class="rmc-actions">
+                <a class="rmc-visit" href="https://rmc.iafenvoy.com" target="_blank" rel="noreferrer">访问
+                  <img src="/external-link-svgrepo-com.svg" alt="" /></a>
+              </div>
+            </header>
+            <p class="rmc-description">RMCreator（Rail Map Creator）是一款可以快速绘制线路示意图的网页，它支持简单的绘制操作，同时提供了大量的客制化功能，允许使用者制作属于自己风格的线路图。</p>
+            <a class="rmc-showcase" href="https://rmc.iafenvoy.com" target="_blank" rel="noreferrer">
+              <img src="/rmc/showcase.webp" alt="RMCreator 展示图" />
+            </a>
+          </div>
+          <footer class="site-footer">
+            <div class="site-footer-row">
+              <span class="site-footer-label">相关链接</span>
+              <nav class="site-footer-links" aria-label="相关链接">
+              <a href="https://github.com/IAFEnvoy" target="_blank" rel="noreferrer">GitHub<img class="external-link-icon" src="/external-link-svgrepo-com.svg" alt="" /></a>
+              <a href="https://discord.gg/NDzz2upqAk" target="_blank" rel="noreferrer">Discord<img class="external-link-icon" src="/external-link-svgrepo-com.svg" alt="" /></a>
+              <a href="https://docs.iafenvoy.com" target="_blank" rel="noreferrer">文档站<img class="external-link-icon" src="/external-link-svgrepo-com.svg" alt="" /></a>
+              <a href="https://gallery.iafenvoy.com" target="_blank" rel="noreferrer">画廊/稿件展示<img class="external-link-icon" src="/external-link-svgrepo-com.svg" alt="" /></a>
+              <a href="https://iafenvoy.space" target="_blank" drel="noreferrer">私有云盘<img class="external-link-icon" src="/external-link-svgrepo-com.svg" alt="" /></a></nav>
             </div>
-            <div class="meBox-text">
-                <p>地球Online游玩时间：</p>
-                <div id="time"></div>
-                <p>软件全栈工程师（当然还没工作）</p>
-                <p>MCJE Mod开发</p>
+            <div class="site-footer-row">
+              <span class="site-footer-label">友情链接</span>
+              <div class="friend-link-slots"><a href="https://001.labmem.com.cn" target="_blank"
+                  rel="noreferrer"><strong>Preca Hoshino</strong><img class="external-link-icon"
+                    src="/external-link-svgrepo-com.svg" alt="" /></a><span></span><span></span></div>
             </div>
-            <!-- 两个按钮 -->
-            <div class="meBox-Button">
-                <a href="https://github.com/IAFEnvoy">GitHub</a>
-                <a href="https://discord.gg/NDzz2upqAk">Discord</a>
-            </div>
-        </div>
-
-        <!-- 伪终端介绍 -->
-        <div id="cmdBox">
-            <!-- 第一个终端 -->
-            <div class="cmd">
-                <!-- 三个按钮 -->
-                <div class="click">
-                    <div class="green"></div>
-                    <div class="yellow"></div>
-                    <div class="red"></div>
-                </div>
-                <!-- 顶部标题 -->
-                <div class="title">
-                    <span>iafenvoy - bash</span>
-                </div>
-                <!-- 终端内文字 -->
-                <div class="cmdText">
-                    <span style="color: rgb(128,0,128)">root@iafenvoy</span>
-                    <span style="color: blue">~</span>
-                    <span style="color: rgb(90, 90, 90)">vim /me.txt</span><br>
-                    世有八气，其中炎热之气与寒冰之气分别处于世界南方荒漠与北方雪原。<br>
-                    一日两气于中原相遇，凝聚成人形，此为冰火使者。<br>
-                    <del>都是什么玩意</del>
-                    <br>
-                    学习过<strong>Assembly, C, C++, C#, Go, Java, JavaScript, Python, Visual Basic</strong><br>
-                    会玩<strong>After Effect</strong><br>
-                    <del>除了画画啥都会</del>
-                </div>
-            </div>
-            <!-- 第二个终端 -->
-            <div class="cmd cmd2">
-                <!-- 三个按钮 -->
-                <div class="click">
-                    <div class="green"></div>
-                    <div class="yellow"></div>
-                    <div class="red"></div>
-                </div>
-                <!-- 顶部标题 -->
-                <div class="title">
-                    <span>iafenvoy - bash</span>
-                </div>
-                <!-- 终端内文字 -->
-                <div class="cmdText">
-                    <span style="color: rgb(128,0,128)">root@iafenvoy</span>
-                    <span style="color: blue">~</span>
-                    <span style="color: rgb(90, 90, 90)">./links.sh</span>
-                    <ul class="ul">
-                        <li style="color:green">
-                            <a target="_blank" href="https://iafenvoy.online/">系统状态（探针）网站</a>
-                        </li>
-                        <li style="color:white">
-                            <a target="_blank" href="https://www.iafenvoy.com/Chemistry/">有机化学键线式生成器</a>
-                        </li>
-                        <li style="color:black">
-                            <a target="_blank" href="https://www.iafenvoy.com/yxh/">营销号生成器</a>
-                        </li>
-                        <li style="color:lawngreen">
-                            <a target="_blank" href="https://mods.iafenvoy.com/">Mod合集</a>
-                        </li>
-                        <li style="color:lightgreen">
-                            <a target="_blank" href="https://dmh.iafenvoy.net/">梦妈の快乐小屋</a>
-                        </li>
-                        <li style="color:lightgreen">
-                            <a target="_blank" href="https://dmcm.iafenvoy.net/">梦妈坐牢小游戏~</a>
-                        </li>
-                    </ul>
-                    <span style="color: rgb(128,0,128)">root@iafenvoy</span>
-                    <span style="color: blue">~</span>
-                    <span style="color: rgb(90, 90, 90)">./friends.sh</span>
-                    <ul class="ul">
-                        <li style="color:orange">
-                            <a target="_blank" href="https://juz1.cn">Juzi</a>
-                        </li>
-                        <li style="color:pink">
-                            <a target="_blank" href="https://awa.gold">IQ Boost</a>
-                        </li>
-                    </ul>
-                    <span style="color: rgb(128,0,128)">root@iafenvoy</span>
-                    <span style="color: blue">~</span>
-                    <span style="color: rgb(90, 90, 90)">./sponsor.sh</span>
-                    <ul class="ul">
-                        <li style="color:orange">
-                            <a target="_blank" href="https://www.patreon.com/IAFEnvoy">Patreon</a>
-                        </li>
-                        <li style="color:red">
-                            <a target="_blank" href="https://ko-fi.com/iafenvoy">Ko-Fi</a>
-                        </li>
-                        <li style="color:mediumslateblue">
-                            <a target="_blank" href="https://afdian.com/a/iafenvoy">爱发电</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
+            <div class="site-footer-row site-footer-copyright"><div>© 2021-<span id="copyright-year"></span> IAFEnvoy&nbsp;&nbsp; All Right Reserved</div></div>
+          </footer>
+        </section>
+      </div>
+    </main>
+  </div>
+  <script type="module" src="/src/main.ts"></script>
 </body>
 
 </html>
